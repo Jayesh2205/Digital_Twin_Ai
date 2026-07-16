@@ -1,0 +1,259 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<style>
+body{
+    background:#f8f9fa;
+}
+
+/* Hero Section */
+.contact-hero{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    padding:70px 0;
+    border-radius:0 0 40px 40px;
+    margin-bottom:60px;
+}
+
+.contact-hero h1{
+    font-size:3rem;
+    font-weight:700;
+}
+
+.contact-hero p{
+    font-size:1.1rem;
+    opacity:.9;
+}
+
+/* Cards */
+
+.contact-card{
+    background:white;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    padding:40px;
+    transition:.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-5px);
+}
+
+.info-box{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    border-radius:20px;
+    padding:40px;
+    height:100%;
+}
+
+.info-item{
+    margin-bottom:30px;
+}
+
+.info-item i{
+    font-size:24px;
+    margin-right:10px;
+}
+
+/* Form */
+
+.form-control{
+    border-radius:12px;
+    padding:14px;
+}
+
+.form-control:focus{
+    border-color:#667eea;
+    box-shadow:0 0 10px rgba(102,126,234,.2);
+}
+
+.btn-send{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    border:none;
+    padding:14px;
+    width:100%;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.btn-send:hover{
+    color:white;
+    transform:translateY(-2px);
+}
+
+/* Google Map */
+
+.map-section{
+    margin-top:60px;
+}
+
+iframe{
+    border-radius:20px;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero -->
+
+<section class="contact-hero">
+    <div class="container text-center">
+
+        <h1>Contact Us</h1>
+
+        <p>
+            We'd love to hear from you.
+            Send us your questions, suggestions or feedback.
+        </p>
+
+    </div>
+</section>
+
+<div class="container">
+
+<div class="row g-5">
+
+<!-- Contact Info -->
+
+<div class="col-lg-4">
+
+<div class="info-box">
+
+<h3 class="mb-4">
+<i class="fas fa-headset"></i>
+Get in Touch
+</h3>
+
+<div class="info-item">
+<i class="fas fa-map-marker-alt"></i>
+<strong>Address</strong>
+<p class="mt-2">
+Walchand Institute of Technology<br>
+Solapur, Maharashtra
+</p>
+</div>
+
+<div class="info-item">
+<i class="fas fa-phone"></i>
+<strong>Phone</strong>
+<p class="mt-2">
++91 9876543210
+</p>
+</div>
+
+<div class="info-item">
+<i class="fas fa-envelope"></i>
+<strong>Email</strong>
+<p class="mt-2">
+digitaltwin@gmail.com
+</p>
+</div>
+
+<div class="info-item">
+<i class="fas fa-clock"></i>
+<strong>Working Hours</strong>
+
+<p class="mt-2">
+Mon - Sat<br>
+9:00 AM - 6:00 PM
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Contact Form -->
+
+<div class="col-lg-8">
+
+<div class="contact-card">
+
+<h2 class="mb-4">
+Send us a Message
+</h2>
+
+<form method="POST">
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<input
+type="text"
+name="name"
+class="form-control"
+placeholder="Full Name"
+required>
+</div>
+
+<div class="col-md-6 mb-3">
+<input
+type="email"
+name="email"
+class="form-control"
+placeholder="Email Address"
+required>
+</div>
+
+</div>
+
+<div class="mb-3">
+
+<input
+type="text"
+name="subject"
+class="form-control"
+placeholder="Subject"
+required>
+
+</div>
+
+<div class="mb-4">
+
+<textarea
+class="form-control"
+rows="6"
+name="message"
+placeholder="Write your message..."
+required></textarea>
+
+</div>
+
+<button class="btn-send">
+<i class="fas fa-paper-plane"></i>
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Google Map -->
+
+<div class="map-section">
+
+<h2 class="text-center mb-4">
+Find Us
+</h2>
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18..."
+width="100%"
+height="420"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,331 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<style>
+body{
+    background:#f5f7ff;
+}
+
+/* Hero */
+.hero{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    padding:80px 0;
+    border-radius:0 0 40px 40px;
+    margin-bottom:50px;
+}
+
+.hero h1{
+    font-size:3rem;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:1.1rem;
+    opacity:.9;
+}
+
+/* Container */
+
+.terms-container{
+    max-width:1000px;
+    margin:auto;
+}
+
+/* Cards */
+
+.terms-card{
+    background:white;
+    border-radius:25px;
+    padding:35px;
+    margin-bottom:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.terms-card:hover{
+    transform:translateY(-5px);
+}
+
+.terms-card h3{
+    color:#667eea;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.terms-card i{
+    color:#667eea;
+    margin-right:10px;
+}
+
+.terms-card ul{
+    padding-left:20px;
+}
+
+.terms-card li{
+    margin-bottom:10px;
+}
+
+.update{
+    text-align:center;
+    color:#777;
+    margin-bottom:50px;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+<div class="container text-center">
+
+<h1>Terms & Conditions</h1>
+
+<p>
+Please read these terms carefully before using Digital Twin AI.
+</p>
+
+</div>
+
+</section>
+
+<div class="container terms-container">
+
+<!-- Acceptance -->
+
+<div class="terms-card">
+
+<h3>
+<i class="fas fa-file-contract"></i>
+Acceptance of Terms
+</h3>
+
+<p>
+
+By accessing or using Digital Twin AI, you agree to follow these
+Terms and Conditions. If you do not agree with any part of these terms,
+please discontinue use of the platform.
+
+</p>
+
+</div>
+
+<!-- User Accounts -->
+
+<div class="terms-card">
+
+<h3>
+
+<i class="fas fa-user-circle"></i>
+
+User Accounts
+
+</h3>
+
+<ul>
+
+<li>Provide accurate registration information.</li>
+
+<li>Keep your login credentials secure.</li>
+
+<li>You are responsible for all activities performed using your account.</li>
+
+<li>Do not share your password with others.</li>
+
+</ul>
+
+</div>
+
+<!-- Acceptable Use -->
+
+<div class="terms-card">
+
+<h3>
+
+<i class="fas fa-check-circle"></i>
+
+Acceptable Use
+
+</h3>
+
+<ul>
+
+<li>Use the platform responsibly.</li>
+
+<li>Do not upload malicious software.</li>
+
+<li>Do not attempt unauthorized access.</li>
+
+<li>Do not misuse AI-generated recommendations.</li>
+
+<li>Respect other users and the platform.</li>
+
+</ul>
+
+</div>
+
+<!-- AI Disclaimer -->
+
+<div class="terms-card">
+
+<h3>
+
+<i class="fas fa-robot"></i>
+
+AI Recommendations
+
+</h3>
+
+<p>
+
+Digital Twin AI provides AI-powered predictions and recommendations.
+
+These predictions are intended for educational and informational purposes only.
+
+They should not be considered financial, legal, medical or professional advice.
+
+</p>
+
+</div>
+
+<!-- Privacy -->
+
+<div class="terms-card">
+
+<h3>
+
+<i class="fas fa-user-shield"></i>
+
+Privacy
+
+</h3>
+
+<p>
+
+Your use of this website is also governed by our Privacy Policy.
+
+By using Digital Twin AI, you consent to the collection and processing
+of information as described in the Privacy Policy.
+
+</p>
+
+</div>
+
+<!-- Intellectual Property -->
+
+<div class="terms-card">
+
+<h3>
+
+<i class="fas fa-copyright"></i>
+
+Intellectual Property
+
+</h3>
+
+<p>
+
+All website content including logos, graphics, AI models,
+designs, text, icons and software are the intellectual property
+of Digital Twin AI and may not be copied or redistributed
+without permission.
+
+</p>
+
+</div>
+
+<!-- Limitation -->
+
+<div class="terms-card">
+
+<h3>
+
+<i class="fas fa-exclamation-triangle"></i>
+
+Limitation of Liability
+
+</h3>
+
+<p>
+
+Digital Twin AI is not responsible for losses, damages or decisions
+made based on AI-generated predictions.
+
+Users are responsible for verifying important information before making
+financial, academic or personal decisions.
+
+</p>
+
+</div>
+
+<!-- Changes -->
+
+<div class="terms-card">
+
+<h3>
+
+<i class="fas fa-sync-alt"></i>
+
+Changes to Terms
+
+</h3>
+
+<p>
+
+We reserve the right to update these Terms and Conditions at any time.
+
+Changes become effective immediately after publication on this page.
+
+</p>
+
+</div>
+
+<!-- Contact -->
+
+<div class="terms-card">
+
+<h3>
+
+<i class="fas fa-envelope"></i>
+
+Contact Information
+
+</h3>
+
+<p>
+
+If you have questions regarding these Terms and Conditions,
+please contact us.
+
+</p>
+
+<p>
+
+<strong>Email:</strong>
+
+support@digitaltwinai.com
+
+</p>
+
+<p>
+
+<strong>Phone:</strong>
+
++91 XXXXX XXXXX
+
+</p>
+
+</div>
+
+<div class="update">
+
+<strong>Last Updated:</strong>
+
+July 2026
+
+</div>
+
+</div>
+
+{% endblock %}

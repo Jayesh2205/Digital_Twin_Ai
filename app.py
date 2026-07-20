@@ -535,9 +535,10 @@ def user_study():
         date = datetime.strptime(request.form['date'], '%Y-%m-%d')
         hours = float(request.form['hours'])
         subject = request.form['subject']
+        chapter = request.form.get("chapter")
         productivity = int(request.form['productivity'])
         log = StudyLog(user_id=current_user.id, date=date, hours=hours, subject=subject,
-                       productivity_score=productivity)
+                       chapter=chapter,productivity_score=productivity)
         db.session.add(log)
         db.session.commit()
         flash('Study session logged.', 'success')
